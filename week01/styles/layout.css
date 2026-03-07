@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    /* Two columns: Main takes 3 parts, Aside takes 1 part */
+    grid-template-columns: 3fr 1fr;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header spanning across both columns */
+header {
+    grid-column: 1 / span 2;
+    background-color: #444;
+    color: white;
+}
+
+.header-text {
+    padding: 40px;
+    font-size: 1.2rem;
+}
+
+/* Nav inside Header */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Main Content Area */
+main {
+    background-color: #f4f4f4;
+    padding: 100px 20px;
+    border-right: 1px solid #ddd;
+}
+
+/* Aside Area */
+aside {
+    background-color: #e9e9e9;
+    padding: 100px 20px;
+}
+
+/* Footer spanning across both columns */
+footer {
+    grid-column: 1 / span 2;
+    background-color: #444;
+    color: white;
+    padding: 40px;
+}
