@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
     #menuButton {
         display: none;
@@ -11,7 +11,9 @@
     }
 
     .container {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 
 }
