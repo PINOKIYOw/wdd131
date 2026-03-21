@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Home Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="htts://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+</head>
+<body>
+    <header>
+        <h1>Norway</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/scandanavia.webp" media="(max-width: 500px)">
+            <source srcset="images/scandanavia.webp" media="(max-width: 1000px)">
+            <img src="images/scandanavia.webp" alt="Scandanavian Mountains">
+        </picture>
+        <section class="info">
+            <h2>Data</h2>
+            <p>Area: 385 000 km/2</p>
+            <p>Population: 5.5M</p>
+            <p>Capital: Oslo</p>
+            <p>Languages: Norwegian</p>
+            <p>Currency: Norwegian Krone(NOK)</p>
+            <p>Time Zone: Central European Time(CET)</p>
+            <p>Calling Code: +47</p>
+            <p>Internet TLD: .no</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Temperature: <span id="temp">8</span>°C</p>
+            <p>Wind Speed: <span id="wind">10</span> km/h</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+        </section>    
+    </main>
+    <footer>
+        <p>© <span id="year"></span> | Lwazi Lubisi | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
