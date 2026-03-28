@@ -9,9 +9,13 @@ h1 {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     margin: 0;
     color: var(--text-color);
+    height: 100%;
 }
 
 header {
@@ -21,20 +25,15 @@ header {
     padding: 1rem;
 }
 
-picture img {
-    position: absolute;
-    width: 100%;
-    height: auto;
-}
-
 main {
+    flex: 1;
     padding: 1rem;
 }
  h2 {
-    background-color: #007878;
-    margin: auto;
-    padding: 1.5rem;
+    background-color: var(--primary-color);
+    padding: 2rem;
     border-radius: 5rem;
+    text-align: center;
  }
 section {
     margin-bottom: 20px;
@@ -46,11 +45,11 @@ section {
 
 footer{
     display: block;
-    background-color: #007678;
+    background-color: var(--primary-color);
     position: relative;
     color: aliceblue;
     text-align: center;
-    margin-top: 36rem;
+    margin-top: 2rem;
     padding: 2rem;
 }
 /* Weather icon (large view) */
