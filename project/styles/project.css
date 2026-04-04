@@ -1,0 +1,39 @@
+:root {
+    --primary: #007a4d;
+    --secondary: #ffb612;
+    --text: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: var(--text);
+    background-color: #f4f4f4;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+}
+
+section {
+    margin-bottom: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.color-box {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.wireframe {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}

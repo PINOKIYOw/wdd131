@@ -11,7 +11,6 @@ menuButton.textContent = '☰';
 }
 });
 
-
 // Footer Dynamic Year
 document.querySelector('#year').textContent = new Date().getFullYear();
 
