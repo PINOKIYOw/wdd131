@@ -40,17 +40,3 @@ input[type="submit"] {
     }
 }
 
-@media (min-width: 768px) {
-    nav {
-        display: block;
-    }
-
-    #menuBtn {
-        display: none;
-    }
-
-    .content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
