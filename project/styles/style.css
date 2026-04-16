@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
     text-align: center;
     color: white;
     padding: 1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #header {
@@ -29,7 +29,7 @@ nav {
     margin-top: 10px;
     color: white;
     text-align: center;
-    padding: 1rem
+    padding: 1rem;
 }
 
 #retainer {
@@ -39,14 +39,18 @@ nav {
 }
 
 #temple {
+    display: flex;
+    /* FIX */
     justify-content: center;
     align-items: center;
-    border: 3px black;
+    border: 3px solid black;
+    /* FIX */
     text-align: center;
 }
 
 #ref {
-    display: contents;
+    display: flex;
+    /* FIX (contents is problematic) */
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -56,9 +60,9 @@ nav.show {
     display: block;
 }
 
-.nav li {
+/* FIX: removed .nav → should match nav */
+nav li {
     display: inline-block;
-    justify-content: space-between;
 }
 
 nav a {
@@ -70,7 +74,8 @@ nav a {
 }
 
 .hero img {
-    width: auto;
+    width: 100%;
+    /* FIX for responsiveness */
     height: auto;
 }
 
@@ -88,7 +93,8 @@ footer {
 /* Desktop */
 @media (min-width: 768px) {
     nav {
-        display: block;
+        display: flex;
+        /* FIX (was block, breaks layout) */
     }
 
     #menuBtn {
